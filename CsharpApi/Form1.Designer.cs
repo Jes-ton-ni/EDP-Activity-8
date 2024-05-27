@@ -39,15 +39,30 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.postHobby = new System.Windows.Forms.Button();
+            this.commentTextBox = new System.Windows.Forms.TextBox();
+            this.hobbyTextBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.userIDTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.hobbyOutput = new System.Windows.Forms.TextBox();
+            this.getHobby = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtOutput);
             this.groupBox1.Controls.Add(this.btnGet);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 70);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(537, 264);
             this.groupBox1.TabIndex = 3;
@@ -67,7 +82,7 @@
             this.btnGet.Name = "btnGet";
             this.btnGet.Size = new System.Drawing.Size(484, 57);
             this.btnGet.TabIndex = 3;
-            this.btnGet.Text = "GET";
+            this.btnGet.Text = "GET USERS";
             this.btnGet.UseVisualStyleBackColor = true;
             this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
             // 
@@ -80,7 +95,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txtUsername);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 292);
+            this.groupBox2.Location = new System.Drawing.Point(13, 341);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(536, 245);
             this.groupBox2.TabIndex = 4;
@@ -92,7 +107,7 @@
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(484, 57);
             this.btnPost.TabIndex = 6;
-            this.btnPost.Text = "POST";
+            this.btnPost.Text = "POST USERS";
             this.btnPost.UseVisualStyleBackColor = true;
             this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
@@ -144,21 +159,148 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Username:";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.postHobby);
+            this.groupBox3.Controls.Add(this.commentTextBox);
+            this.groupBox3.Controls.Add(this.hobbyTextBox);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.userIDTextBox);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Location = new System.Drawing.Point(587, 341);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(536, 245);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            // 
+            // postHobby
+            // 
+            this.postHobby.Location = new System.Drawing.Point(25, 167);
+            this.postHobby.Name = "postHobby";
+            this.postHobby.Size = new System.Drawing.Size(484, 57);
+            this.postHobby.TabIndex = 6;
+            this.postHobby.Text = "POST SELECTED USER FAVORITES";
+            this.postHobby.UseVisualStyleBackColor = true;
+            this.postHobby.Click += new System.EventHandler(this.postHobby_Click);
+            // 
+            // commentTextBox
+            // 
+            this.commentTextBox.Location = new System.Drawing.Point(110, 123);
+            this.commentTextBox.Name = "commentTextBox";
+            this.commentTextBox.Size = new System.Drawing.Size(399, 22);
+            this.commentTextBox.TabIndex = 5;
+            // 
+            // hobbyTextBox
+            // 
+            this.hobbyTextBox.Location = new System.Drawing.Point(110, 88);
+            this.hobbyTextBox.Name = "hobbyTextBox";
+            this.hobbyTextBox.Size = new System.Drawing.Size(399, 22);
+            this.hobbyTextBox.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Comment";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 88);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 16);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Hobby";
+            // 
+            // userIDTextBox
+            // 
+            this.userIDTextBox.Location = new System.Drawing.Point(110, 45);
+            this.userIDTextBox.Name = "userIDTextBox";
+            this.userIDTextBox.Size = new System.Drawing.Size(399, 22);
+            this.userIDTextBox.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 16);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "User ID";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.hobbyOutput);
+            this.groupBox4.Controls.Add(this.getHobby);
+            this.groupBox4.Location = new System.Drawing.Point(586, 70);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(537, 264);
+            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabStop = false;
+            // 
+            // hobbyOutput
+            // 
+            this.hobbyOutput.Location = new System.Drawing.Point(26, 21);
+            this.hobbyOutput.Multiline = true;
+            this.hobbyOutput.Name = "hobbyOutput";
+            this.hobbyOutput.Size = new System.Drawing.Size(484, 134);
+            this.hobbyOutput.TabIndex = 4;
+            // 
+            // getHobby
+            // 
+            this.getHobby.Location = new System.Drawing.Point(26, 182);
+            this.getHobby.Name = "getHobby";
+            this.getHobby.Size = new System.Drawing.Size(484, 57);
+            this.getHobby.TabIndex = 3;
+            this.getHobby.Text = "GET USER FAVORITES";
+            this.getHobby.UseVisualStyleBackColor = true;
+            this.getHobby.Click += new System.EventHandler(this.getHobby_Click);
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(42, 21);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(174, 31);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Users";
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(607, 21);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(199, 31);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Favorites";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 549);
+            this.ClientSize = new System.Drawing.Size(1135, 704);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C#-MYSQL API Demo";
+            this.Text = "users";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -175,6 +317,19 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPost;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button postHobby;
+        private System.Windows.Forms.TextBox commentTextBox;
+        private System.Windows.Forms.TextBox hobbyTextBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox userIDTextBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox hobbyOutput;
+        private System.Windows.Forms.Button getHobby;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 
